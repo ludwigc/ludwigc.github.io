@@ -10,7 +10,7 @@
 <style>.anim{visibility:hidden}</style>
 <script>!function(){var A=new Image;A.onload=A.onerror=function(){1!=A.height&&document.body.classList.remove("webp")},A.src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/ua1AAA"}();
 </script>
-<link rel="stylesheet" href="css/site.d8bb26.css" type="text/css">
+<link rel="stylesheet" href="css/site.13602c.css" type="text/css">
 </head>
 <body class="webp" id="b1">
 <script>var p=document.createElement("P");p.innerHTML="&nbsp;",p.style.cssText="position:fixed;visible:hidden;font-size:100px;zoom:1",document.body.appendChild(p);var rsz=function(e){return function(){var r=Math.trunc(1e3/parseFloat(window.getComputedStyle(e).getPropertyValue("font-size")))/10,t=document.body;r!=t.style.getPropertyValue("--f")&&t.style.setProperty("--f",r)}}(p);if("ResizeObserver"in window){var ro=new ResizeObserver(rsz);ro.observe(p)}else if("requestAnimationFrame"in window){var raf=function(){rsz(),requestAnimationFrame(raf)};requestAnimationFrame(raf)}else setInterval(rsz,100);</script>
@@ -69,12 +69,12 @@
 <p class="p2 f4">Introduction</p>
 </div>
 <div class="v1 ps142 s230 c3 z159">
-<p class="p3 f5">While most everyday data analysis options can be easily set and executed via the MetaboLabPy GUI, at least partially automated tasks can make data analysis quicker and more reproducible. Reading in a series of 1D-NMR spectra is such an example. While we could click the <span class="f34">Open NMR Spectrum</span> for each spectrum separately, this procedure is not very efficient. Because MetaboLabPy is built as a set of python classes, computational actions can be easily scripted in MetaboLabPy. The <span class="f34">Script</span> tab in the GUI is a good example for this. To facilitate standard actions such as reading in NMR spectra or setting processing parameters, a set of example scripts is included in MetaboLabPy. Each example script is well documented using comments at the end of each code line. In addition we can use non-GUI MetaboLabPy classes and methods via a Jupyter-notebook. There is a series of example Jupyter notebooks distributed with the metabolabpy package.</p>
+<p class="p3 f5">While most everyday data analysis options can be easily set and executed via the MetaboLabPy GUI, at least partially automated tasks can make data analysis quicker and more reproducible. Reading in a series of 1D-NMR spectra is such an example. While we could click the <span class="f35">Open NMR Spectrum</span> for each spectrum separately, this procedure is not very efficient. Because MetaboLabPy is built as a set of python classes, computational actions can be easily scripted in MetaboLabPy. The <span class="f35">Script</span> tab in the GUI is a good example for this. To facilitate standard actions such as reading in NMR spectra or setting processing parameters, a set of example scripts is included in MetaboLabPy. Each example script is well documented using comments at the end of each code line. In addition we can use non-GUI MetaboLabPy classes and methods via a Jupyter-notebook. There is a series of example Jupyter notebooks distributed with the metabolabpy package.</p>
 <p class="p3 f5">In the following we will look at two specific examples, highlighting small differences when using the scripting interface from within the MetaboLabPy GUI and when using Jupyter notebooks.</p>
 <p class="p3 f5"><br></p>
 </div>
 <div class="v1 ps204 s146">
-<div class="anim fadeIn un121 v1 ps28 s31 c3 z4">
+<div class="anim fadeIn un121 v1 ps29 s31 c3 z4">
 <p class="p1"><a href="index.html#top" class="f1">MetaboLabPy - Home</a></p>
 </div>
 <div class="anim fadeIn un122 v1 ps2 s32 c3 z9">
@@ -102,7 +102,7 @@
 <p class="p2 f4">MetaboLabPy Scripts</p>
 </div>
 <div class="v1 ps187 s234 c3 z16">
-<p class="p3 f31"><span class="f5">Let&rsquo;s start</span><span class="f5"> with a script to read in a series of 1D-</span><sup class="f5">1</sup><span class="f5">H NMR data. Please download an example 1D-NMR dataset <a href="https://tinyurl.com/nmr1dSeries" class="f6">here</a></span><span class="f5">. Locate the example scripts pop-up menu located on the lower left corner of the </span><span class="f34">Script</span><span class="f5"> tab. Click on </span><span class="f35">&lsquo;1D Example Script&rsquo;</span><span class="f5">. This will load the text for the 1D example script. Now, change </span><span class="f35">&lsquo;Replace with directory containing Bruker data&rsquo;</span><span class="f5"> with </span><span class="f35">&lsquo;interactive&rsquo;</span><span class="f5"> and replace the square brackets in the line below with the expression </span><span class="f35">np.linspace(1, 4, 4, dtype=int)</span><span class="f5">. This creates a numpy array with the numbers 1, 2, 3 &amp; 4. Alternatively we could have specified each dataset number explicitly and replaced </span><span class="f35">[]</span><span class="f5"> with </span><span class="f35">[1, 2, 3, 4]</span><span class="f5">. After these modifications, we should have a script like this:</span></p>
+<p class="p3 f31"><span class="f5">Let&rsquo;s start</span><span class="f5"> with a script to read in a series of 1D-</span><sup class="f5">1</sup><span class="f5">H NMR data. Please download an example 1D-NMR dataset <a href="https://tinyurl.com/nmr1dSeries" class="f6">here</a></span><span class="f5">. Locate the example scripts pop-up menu located on the lower left corner of the </span><span class="f35">Script</span><span class="f5"> tab. Click on </span><span class="f36">&lsquo;1D Example Script&rsquo;</span><span class="f5">. This will load the text for the 1D example script. Now, change </span><span class="f36">&lsquo;Replace with directory containing Bruker data&rsquo;</span><span class="f5"> with </span><span class="f36">&lsquo;interactive&rsquo;</span><span class="f5"> and replace the square brackets in the line below with the expression </span><span class="f36">np.linspace(1, 4, 4, dtype=int)</span><span class="f5">. This creates a numpy array with the numbers 1, 2, 3 &amp; 4. Alternatively we could have specified each dataset number explicitly and replaced </span><span class="f36">[]</span><span class="f5"> with </span><span class="f36">[1, 2, 3, 4]</span><span class="f5">. After these modifications, we should have a script like this:</span></p>
 <p class="p3 f5"><br></p>
 </div>
 </div>
@@ -122,20 +122,20 @@
 </div>
 </div>
 <div class="v1 ps211 s236 c3 z24">
-<p class="p3 f35">msg = self.clear()</p>
-<p class="p3 f35">data_path = 'interactive' # select directory containing bruker data, interactive for file dialog</p>
-<p class="p3 f35">data_sets = np.linspace(1, 4, 4, dtyp=int)&nbsp;&nbsp;&nbsp;&nbsp;# add comma separated list of experiment numbers </p>
-<p class="p3 f35">self.read_spcs([data_path],data_sets)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # reading Bruker spectra</p>
-<p class="p3 f35">msg = self.nd.set_zero_fill([131072])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # zero fill to 131072 data points</p>
-<p class="p3 f35">msg = self.nd.set_lb([0.3])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # 0.3 Hz line broadening</p>
-<p class="p3 f35">msg = self.nd.set_window_type([1])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# exponential window function</p>
-<p class="p3 f35">msg = self.nd.ft_all()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Fourier Transform all NMR spectra</p>
-<p class="p3 f35">msg = self.nd.auto_ref_all()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# automatically reference to TMSP</p>
-<p class="p3 f35">self.nd.e = 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # make first spectrum the current experiment</p>
-<p class="p3 f35">self.set_ph_ref_exp(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# select reference spectrum for manual phase correction</p>
+<p class="p3 f36">msg = self.clear()</p>
+<p class="p3 f36">data_path = 'interactive' # select directory containing bruker data, interactive for file dialog</p>
+<p class="p3 f36">data_sets = np.linspace(1, 4, 4, dtyp=int)&nbsp;&nbsp;&nbsp;&nbsp;# add comma separated list of experiment numbers </p>
+<p class="p3 f36">self.read_spcs([data_path],data_sets)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # reading Bruker spectra</p>
+<p class="p3 f36">msg = self.nd.set_zero_fill([131072])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # zero fill to 131072 data points</p>
+<p class="p3 f36">msg = self.nd.set_lb([0.3])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # 0.3 Hz line broadening</p>
+<p class="p3 f36">msg = self.nd.set_window_type([1])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# exponential window function</p>
+<p class="p3 f36">msg = self.nd.ft_all()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Fourier Transform all NMR spectra</p>
+<p class="p3 f36">msg = self.nd.auto_ref_all()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# automatically reference to TMSP</p>
+<p class="p3 f36">self.nd.e = 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # make first spectrum the current experiment</p>
+<p class="p3 f36">self.set_ph_ref_exp(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# select reference spectrum for manual phase correction</p>
 </div>
 <div class="v1 ps212 s237 c3 z31">
-<p class="p3 f5">After script execution (either clicking <span class="f34">eXecute Script</span> or via the keyboard shortcut Ctrl + x on Windows or <span class="f7">&#x2318;</span><span class="f7"> + </span><span class="f7">x on macOS) the four spectra in that dataset should have been read in, all FIDs will be exponentially line broadened by 0.3 Hz, zero-filled to 131072 data points and auto referenced to TMSP.</span></p>
+<p class="p3 f5">After script execution (either clicking <span class="f35">eXecute Script</span> or via the keyboard shortcut Ctrl + x on Windows or <span class="f7">&#x2318;</span><span class="f7"> + </span><span class="f7">x on macOS) the four spectra in that dataset should have been read in, all FIDs will be exponentially line broadened by 0.3 Hz, zero-filled to 131072 data points and auto referenced to TMSP.</span></p>
 <p class="p3 f7">The other example scripts show further examples how to use the script interface.</p>
 </div>
 <a name="jupyter" class="v1 ps213 s3"></a>
@@ -151,7 +151,7 @@
 <p class="p3 f5">&nbsp;- jupyter</p>
 <p class="p3 f5">&nbsp;- jupyterthemes</p>
 <p class="p3 f5"><br></p>
-<p class="p3 f31"><span class="f5">These packages can be installed with the command </span><span class="f35">pip install jupyter jupyterthemes</span><span class="f5"> in an Anaconda powershelgl prompt or in a macOS Terminal, after the metabolabpy environment has been activated. For convenience, a zip archive with example notebooks can also be downloaded <a href="https://tinyurl.com/jupyterMlPy" class="f6">here</a></span><span class="f5">.&nbsp;&nbsp;For this tutorial, we are using the file mlpy_2d_spc.ipynb.</span></p>
+<p class="p3 f31"><span class="f5">These packages can be installed with the command </span><span class="f36">pip install jupyter jupyterthemes</span><span class="f5"> in an Anaconda powershelgl prompt or in a macOS Terminal, after the metabolabpy environment has been activated. For convenience, a zip archive with example notebooks can also be downloaded <a href="https://tinyurl.com/jupyterMlPy" class="f6">here</a></span><span class="f5">.&nbsp;&nbsp;For this tutorial, we are using the file mlpy_2d_spc.ipynb.</span></p>
 <p class="p3 f5">Each jupyter notebook contains several code cells. Each cell can be executed by clicking into the cell and the typing <span class="f7">&#x21e7;</span><span class="f7"> +</span><span class="f7"> Enter.</span></p>
 </div>
 </div>
@@ -203,7 +203,7 @@
 <div class="v1 ps217 s247 c3 z163">
 <p class="p3 f5">At the end, the resulting spectrum is plotted.</p>
 </div>
-<div class="v1 ps38 s248 c3 z168">
+<div class="v1 ps39 s248 c3 z168">
 <picture>
 <source srcset="images/screenshot-2023-07-24-at-22.47.04-886.webp 1x" type="image/webp">
 <source srcset="images/screenshot-2023-07-24-at-22.47.04-886.png 1x">
@@ -213,7 +213,7 @@
 <div class="v1 ps219 s247 c3 z47">
 <p class="p3 f5">The spectrum is then saved as a MetaboLabPy data file.</p>
 </div>
-<div class="v1 ps38 s249 c3 z63">
+<div class="v1 ps39 s249 c3 z63">
 <picture>
 <source srcset="images/screenshot-2023-07-25-at-00.12.19-889.webp 1x" type="image/webp">
 <source srcset="images/screenshot-2023-07-25-at-00.12.19-889.jpg 1x">
@@ -249,6 +249,6 @@
 <script>dpth="/"</script>
 <script type="text/javascript" src="js/fixed.f3b8c4.js"></script>
 <script type="text/javascript" src="js/woolite.f3b8c4.js"></script>
-<script type="text/javascript" src="js/scripts.d8bb26.js"></script>
+<script type="text/javascript" src="js/scripts.13602c.js"></script>
 </body>
 </html>
